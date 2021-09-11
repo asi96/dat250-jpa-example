@@ -3,7 +3,9 @@ package no.hvl.dat250.jpa.banking;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Entity;
 
+@Entity
 public class Pincode {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,7 +17,7 @@ public class Pincode {
 		return this.count;
 	}
 	
-	public void setNumber(int count) {
+	public void setCount(int count) {
 		this.count = count;
 	}
 	
@@ -23,7 +25,7 @@ public class Pincode {
 		return this.pincode;
 	}
 	
-	public void setStreet(String pincode) {
+	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
 	

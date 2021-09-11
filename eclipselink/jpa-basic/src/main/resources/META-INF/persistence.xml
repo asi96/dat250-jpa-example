@@ -7,6 +7,11 @@
         <class>no.hvl.dat250.jpa.model.Person</class>
         <class>no.hvl.dat250.jpa.model.Family</class>
         <class>no.hvl.dat250.jpa.model.Job</class>
+        <class>no.hvl.dat250.jpa.banking.PersonB</class>
+        <class>no.hvl.dat250.jpa.banking.Adress</class>
+        <class>no.hvl.dat250.jpa.banking.CreditCard</class>
+        <class>no.hvl.dat250.jpa.banking.Bank</class>
+        <class>no.hvl.dat250.jpa.banking.Pincode</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
                       <!-- TODO Change the path in the value of the property "javax.persistence.jdbc.url" here! -->
