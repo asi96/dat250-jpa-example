@@ -4,11 +4,14 @@
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
     <persistence-unit name="todos" transaction-type="RESOURCE_LOCAL">
         <class>no.hvl.dat250.jpa.basicexample.Todo</class>
+        <class>no.hvl.dat250.jpa.model.Person</class>
+        <class>no.hvl.dat250.jpa.model.Family</class>
+        <class>no.hvl.dat250.jpa.model.Job</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
                       <!-- TODO Change the path in the value of the property "javax.persistence.jdbc.url" here! -->
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:derby:C:\Source\testdb;create=true"/>
+                      value="jdbc:derby:F:\git-repos\dat250-jpa-example\db;create=true"/>
             <property name="javax.persistence.jdbc.user" value="test"/>
             <property name="javax.persistence.jdbc.password" value="test"/>
 

@@ -16,7 +16,8 @@ public class Main {
         EntityManager em = factory.createEntityManager();
         // read the existing entries and write to console
         Query q = em.createQuery("select t from Todo t");
-        List<Todo> todoList = q.getResultList();
+        @SuppressWarnings("unchecked")
+		List<Todo> todoList = q.getResultList();
         for (Todo todo : todoList) {
             System.out.println(todo);
         }
